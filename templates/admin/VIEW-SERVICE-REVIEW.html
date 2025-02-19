@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+{% extends 'admin/index.html' %}
+{% block body %}
+<body style="font-family: Arial, sans-serif; background-color: #f8f8f8;">
+<form action="/myapp/view_service_review_post/" method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
+    {% csrf_token %}
+
+    <table class="pull-left" style="margin-bottom: 20px; width: 100%;">
+        <tr>
+            <th scope="col" style="padding: 8px;">FROM</th>
+            <th scope="col" style="padding: 8px;"><input type="date" name="textfield" id="textfield" class="form-control" style="width: 100%;"required/></th>
+            <th scope="col" style="padding: 8px;">TO</th>
+            <th scope="col" style="padding: 8px;"><input type="date" name="textfield2" id="textfield2" class="form-control" style="width: 100%;"required/></th>
+            <th scope="col" style="padding: 8px;"><input type="submit" name="button" id="button" value="SEARCH" class="btn btn-success" style="background-color: blue; color: white; width: 100%;"/></th>
+        </tr>
+    </table>
+
+    <p>&nbsp;</p>
+
+    <table class="table table-bordered" style="width: 100%; border-collapse: collapse; background-color: #ffffff; border: 1px solid #ccc;">
+        <tr style="background-color: #dddddd;">
+            <th scope="col" style="padding: 8px;">SLNO</th>
+            <th scope="col" style="padding: 8px;">DATE</th>
+            <th scope="col" style="padding: 8px;">USER</th>
+            <th scope="col" style="padding: 8px;">SERVICE NAME</th>
+            <th scope="col" style="padding: 8px;">REVIEW</th>
+        </tr>
+        {% for k in data %}
+        <tr>
+            <td style="padding: 8px; text-align: center;">{{ forloop.counter }}</td>
+            <td style="padding: 8px;">{{ k.date }}&nbsp;</td>
+            <td style="padding: 8px;">{{ k.LOGIN.username }}&nbsp;</td>
+            <td style="padding: 8px;">&nbsp;{{ k.SERVICE.service_name }}</td>
+            <td style="padding: 8px;">&nbsp;{{ k.review }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</form>
+</body>
+{% endblock %}
+</html>

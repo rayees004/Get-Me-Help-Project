@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+{% extends 'service center/servicecenterindex.html' %}
+{% block body %}
+
+
+<body>
+<form id="form1" name="form1" method="post" action="/myapp/view_rejected_post/">
+    {% csrf_token %}
+  <table width="200" border="1" class="pull-left">
+    <tr>
+      <th scope="col">From</th>
+      <th scope="col"><input type="date" name="button" id="button" class="form-control"required /></th>
+      <th scope="col">To</th>
+      <th scope="col"><input type="date" name="button2" id="button2" class="form-control" required /></th>
+      <th scope="col"><input type="submit" name="button3" id="button3" value="Search" class="btn btn-success" /></th>
+    </tr>
+  </table >
+  <table width="390" border="1" class="table table-bordered">
+    <tr>
+      <th width="41" scope="col">slno</th>
+      <th width="48" scope="col">Date</th>
+      <th width="103" scope="col">Username</th>
+      <th width="82" scope="col">Address</th>
+      <th width="82" scope="col">contact</th>
+    </tr>{% for i in data %}
+    <tr>
+      <td>&nbsp;{{ forloop.counter }}</td>
+      <td>{{ i.date }}</td>
+      <td>&nbsp;{{ i.USER.name }}</td>
+      <td>&nbsp;{{ i.USER.place }},{{ i.USER.district }}<br>{{ i.USER.state }}</td>
+      <td>&nbsp;{{ i.USER.Phone }}</td>
+    </tr>{% endfor %}
+  </table>
+  <p>&nbsp;</p>
+</form>
+</body>
+{% endblock %}
+</html>

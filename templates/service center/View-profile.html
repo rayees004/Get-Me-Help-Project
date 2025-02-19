@@ -1,0 +1,37 @@
+{% extends 'service center/servicecenterindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="">
+    <h1 align="center">MY PROFILE</h1>
+  <table border="3px" align="center" class="table table-bordered">
+
+    <tr>
+      <th  colspan="2" align="center"><img name="" src="{{ data.photo }}"style="height:150px; width: inherit;" alt="" /></th>
+    </tr>
+    <tr>
+      <th width="178" scope="row"><p>Name:</p></th>
+      <td width="141">&nbsp;{{ data.name }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Email:</th>
+      <td>&nbsp;{{ data.email }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Phone:</th>
+      <td>&nbsp;{{ data.phone }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Owner Details:</th>
+      <td>{{ data.ownername }},<br>{{ data.owneremail }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Address:</th>
+      <td>{{ data.place }},{{ data.pin }},<br>post:{{ data.post }},{{ data.district }},</td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><a href="/myapp/edit_profile_get/">Edit</a></th>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}

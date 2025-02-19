@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<form action="/myapp/login_post/" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+<table width="351" height="147" border="1">
+    <tr>
+      <td colspan="2" align="center">Login</td>
+    </tr>
+    <tr>
+      <td width="145">username:</td>
+      <td width="216"><label for="textarea2"></label>
+        <label for="textfield"></label>
+        <input type="text" name="textfield" id="textfield" /></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><label>
+        <input type="text" name="textfield2" id="textfield2" />
+      </label>        
+      <label for="password"></label></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" name="login" id="button" value="login" /></td>
+    </tr>
+  </table>
+        <a href="/myapp/sign_up_get/">new service center sign up</a>
+
+</form>
+</body>
+</html>

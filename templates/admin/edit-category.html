@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+{% extends 'admin/index.html' %}
+{% block body %}
+<body style="font-family: Arial, sans-serif; background-color: #f8f8f8;">
+<form action="/myapp/edit_category_post/" method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
+    {% csrf_token %}
+    <table class="table table-bordered" style="width: 100%; border-collapse: collapse; background-color: #ffffff; border: 1px solid #ccc;">
+        <input type="hidden" name="cid" value="{{ data.id }}">
+        <tr>
+            <td colspan="2" align="center" style="padding: 8px;"><h1>Category</h1></td>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Category</td>
+            <td style="padding: 8px;"><input name="category" type="text" value="{{ data.category }}" class="form-control" style="width: 100%;"required/></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" style="padding: 8px;"><input type="submit" value="Update" class="btn btn-success" style="background-color: #00bdfe; color: white;"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+{% extends 'admin/index.html' %}
+{% block body %}
+<body style="font-family: Arial, sans-serif; background-color: #f8f8f8;">
+<form action="/myapp/view_users_post/" method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
+    {% csrf_token %}
+
+    <table class="pull-left" style="margin-bottom: 20px; width: 50%;">
+        <tr>
+            <th scope="col" style="padding: 8px;"><input type="text" name="textfield" id="textfield" class="form-control" style="width: 100%;"required/></th>
+            <th scope="col" style="padding: 8px;"><input type="submit" name="button" id="button" value="search" class="btn btn-success" style="background-color: #00bdfe; color: white; width: 100%;"/></th>
+        </tr>
+    </table>
+
+    <table class="table table-bordered" style="width: 100%; border-collapse: collapse; background-color: #ffffff; border: 1px solid #ccc;">
+        <tr style="background-color: #dddddd;">
+            <th scope="col" style="padding: 8px;">SLNO</th>
+            <th scope="col" style="padding: 8px;">NAME</th>
+            <th scope="col" style="padding: 8px;">EMAIL</th>
+            <th scope="col" style="padding: 8px;">ADDRESS</th>
+            <th scope="col" style="padding: 8px;">GENDER</th>
+            <th scope="col" style="padding: 8px;">CONTACT</th>
+            <th scope="col" style="padding: 8px;">DOB</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td style="padding: 8px; text-align: center;">{{ forloop.counter }}</td>
+            <td style="padding: 8px;">{{ i.name }}</td>
+            <td style="padding: 8px;">{{ i.email }}</td>
+            <td style="padding: 8px;">{{ i.place }}<br>{{ i.district }},{{ i.state }}</td>
+            <td style="padding: 8px;">&nbsp;{{ i.gender }}</td>
+            <td style="padding: 8px;">&nbsp;{{ i.Phone }}</td>
+            <td style="padding: 8px;">&nbsp;{{ i.dob }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</form>
+</body>
+{% endblock %}
+</html>

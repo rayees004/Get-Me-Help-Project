@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sign-up</title>
+        <link rel="icon" type="image/x-icon" href="/media/logomain.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="/static/signup/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/static/signup/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="/myapp/sign_up_post/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+					<h3>Create Your Account</h3>
+
+
+					<div class="form-wrapper">
+						<label for="" class="label-input">Name</label>
+						<input type="text" name="textfield" class="form-control"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">Mail</label>
+						<input type="text" name="textfield2" class="form-control"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">Phone</label>
+						<input type="text" class="form-control" name="textfield3"required>
+					</div>
+                    <div class="form-wrapper">
+						<label for="" class="label-input">Pin</label>
+						<input type="text" class="form-control" name="textfield4"required>
+					</div>
+                    <div class="form-wrapper">
+						<label for="" class="label-input">Place</label>
+						<input type="text" class="form-control" name="textfield5"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">Post</label>
+						<input type="text" class="form-control" name="textfield6"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">Photo</label>
+                        <input type="file" name="textfield7" id="textfield7" required class="form-control"/>					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">District</label>
+						<input type="text" class="form-control" name="textfield8"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">OwnerName</label>
+						<input type="text" class="form-control" name="textfield9"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">OwnerMail</label>
+						<input type="text" class="form-control" name="textfield10"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">Password</label>
+						<input type="text" class="form-control" name="textfield11"required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">Confirm Password</label>
+						<input type="password" class="form-control" name="textfield12"required>
+					</div>
+                    <button style="margin-left: 25%">Sign-up</button>
+				</form>
+				<div class="image-holder">
+					<img src="/static/signup/images/registration-form-5.jpg" alt="" style="height: 715px">
+				</div>
+			</div>
+		</div>
+
+		<script src="/static/signup/js/jquery-3.3.1.min.js"></script>
+		<script src="/static/signup/js/main.js"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
