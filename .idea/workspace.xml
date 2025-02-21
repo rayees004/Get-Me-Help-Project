@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d61f983-b180-4c83-a94e-58ab1b2d01d9" name="Default" comment="" />
+    <list default="true" id="1d61f983-b180-4c83-a94e-58ab1b2d01d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MYAPP/views.py" afterPath="$PROJECT_DIR$/MYAPP/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/SEND-REPLY.html" afterPath="$PROJECT_DIR$/templates/admin/SEND-REPLY.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/VIEW-APP-REVIEW.html" afterPath="$PROJECT_DIR$/templates/admin/VIEW-APP-REVIEW.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html" afterPath="$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/VIEW-COMPLAINTS.html" afterPath="$PROJECT_DIR$/templates/admin/VIEW-COMPLAINTS.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/VIEW-SERVICE-REVIEW.html" afterPath="$PROJECT_DIR$/templates/admin/VIEW-SERVICE-REVIEW.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/index.html" afterPath="$PROJECT_DIR$/templates/admin/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html" afterPath="$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/service center/servicecenterindex.html" afterPath="$PROJECT_DIR$/templates/service center/servicecenterindex.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +25,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5966443">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/MYAPP/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2850">
-                  <caret line="98" column="23" lean-forward="false" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+                <state relative-caret-position="3570">
+                  <caret line="122" column="51" lean-forward="false" selection-start-line="122" selection-start-column="51" selection-end-line="122" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -30,8 +41,78 @@
           <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/MYAPP/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2610">
-                  <caret line="87" column="13" lean-forward="false" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="13" />
+                <state relative-caret-position="-150">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2040">
+                  <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="templatemo-snapx-photography.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/MYAPP/static/home/assets/css/templatemo-snapx-photography.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="10860">
+                  <caret line="362" column="31" lean-forward="false" selection-start-line="362" selection-start-column="31" selection-end-line="362" selection-end-column="31" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VIEW-APPROVED-SERVICE-CENTER.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="9" column="71" lean-forward="false" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="servicecenterindex.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/service center/servicecenterindex.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1290">
+                  <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="servicecenterhome.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/service center/servicecenterhome.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SEND-REPLY.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/admin/SEND-REPLY.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1020">
+                  <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VIEW-COMPLAINTS.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-COMPLAINTS.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="660">
+                  <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -40,81 +121,15 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MYAPP/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="279">
-                  <caret line="478" column="40" lean-forward="false" selection-start-line="478" selection-start-column="40" selection-end-line="478" selection-end-column="40" />
+                <state relative-caret-position="120">
+                  <caret line="622" column="40" lean-forward="true" selection-start-line="622" selection-start-column="40" selection-end-line="622" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                     <element signature="e#2866#2962#0" expanded="false" />
-                    <marker date="1739794021606" expanded="true" signature="9326:9544" ph="..." />
-                    <marker date="1739794021606" expanded="true" signature="14286:14667" ph="..." />
-                    <marker date="1739794021606" expanded="true" signature="14592:14597" ph="..." />
+                    <marker date="1740160538212" expanded="true" signature="9406:9624" ph="..." />
+                    <marker date="1740160538212" expanded="true" signature="14366:14747" ph="..." />
+                    <marker date="1740160538212" expanded="true" signature="14672:14677" ph="..." />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="VIEW-SERVICE-REVIEW.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="view-rejected-booking.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/service center/view-rejected-booking.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="View-profile.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/service center/View-profile.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="VIEW-SERVICE-REVIEW.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-SERVICE-REVIEW.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#style#0;n#th#3;n#tr#0;n#table#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#td#4;n#tr#1;n#table#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="e#2218#2224#1#HTML" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GETMEHELP/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -122,22 +137,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/MYAPP/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="99" column="30" lean-forward="false" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <leaf>
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MYAPP/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2010">
-                  <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="19" />
+                <state relative-caret-position="0">
+                  <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -156,10 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pay</find>
-      <find>work</find>
-      <find>ass</find>
-      <find>assets</find>
       <find>vendor</find>
       <find>category</find>
       <find>snap</find>
@@ -182,10 +183,14 @@
       <find>send_service_center_review_post</find>
       <find>view_complaint_reply_post</find>
       <find>send_app_review_post</find>
-      <find>view_work_status_post</find>
-      <find>view_service_review_get</find>
       <find>user_change_password_post</find>
       <find>service_review_get</find>
+      <find>login</find>
+      <find>send_complaint_post</find>
+      <find>view_service_review_get</find>
+      <find>class=&quot;main-nav&quot;</find>
+      <find>view_request_status_post</find>
+      <find>view_work_status_post</find>
     </findStrings>
     <replaceStrings>
       <replace>100</replace>
@@ -193,6 +198,9 @@
     <dirStrings>
       <dir>C:\Users\LENOVO\PycharmProjects\GETMEHELP</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -205,7 +213,6 @@
         <option value="$PROJECT_DIR$/MYAPP/static/home/author.html" />
         <option value="$PROJECT_DIR$/MYAPP/static/home/index.html" />
         <option value="$PROJECT_DIR$/templates/admin/edit-category.html" />
-        <option value="$PROJECT_DIR$/templates/admin/SEND-REPLY.html" />
         <option value="$PROJECT_DIR$/templates/service center/CHANGE-PASSWORD.html" />
         <option value="$PROJECT_DIR$/templates/service center/Payment.html" />
         <option value="$PROJECT_DIR$/templates/service center/sign-up.html" />
@@ -220,26 +227,27 @@
         <option value="$PROJECT_DIR$/templates/service center/add-service.html" />
         <option value="$PROJECT_DIR$/templates/service center/view-service.html" />
         <option value="$PROJECT_DIR$/templates/admin/VIEW-SERVICE-CENTER.html" />
-        <option value="$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html" />
         <option value="$PROJECT_DIR$/templates/admin/VIEW-REJECTED-SERVICE-CENTER.html" />
         <option value="$PROJECT_DIR$/templates/admin/VIEW-USERS.html" />
-        <option value="$PROJECT_DIR$/templates/admin/VIEW-COMPLAINTS.html" />
-        <option value="$PROJECT_DIR$/templates/admin/VIEW-APP-REVIEW.html" />
         <option value="$PROJECT_DIR$/templates/admin/CHANGE-PASSWORD.html" />
         <option value="$PROJECT_DIR$/templates/admin/add-category.html" />
         <option value="$PROJECT_DIR$/templates/admin/VIEW-CATEGORY.html" />
-        <option value="$PROJECT_DIR$/templates/admin/index.html" />
         <option value="$PROJECT_DIR$/templates/login page.html" />
         <option value="$PROJECT_DIR$/GETMEHELP/settings.py" />
         <option value="$PROJECT_DIR$/templates/service center/view-category.html" />
         <option value="$PROJECT_DIR$/templates/service center/view-booking.html" />
         <option value="$PROJECT_DIR$/getmehelpDB.sql" />
         <option value="$PROJECT_DIR$/templates/service center/Update-Work-status.html" />
-        <option value="$PROJECT_DIR$/MYAPP/models.py" />
-        <option value="$PROJECT_DIR$/templates/admin/VIEW-SERVICE-REVIEW.html" />
-        <option value="$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html" />
-        <option value="$PROJECT_DIR$/templates/service center/servicecenterindex.html" />
         <option value="$PROJECT_DIR$/MYAPP/urls.py" />
+        <option value="$PROJECT_DIR$/MYAPP/models.py" />
+        <option value="$PROJECT_DIR$/templates/admin/VIEW-APP-REVIEW.html" />
+        <option value="$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html" />
+        <option value="$PROJECT_DIR$/templates/admin/VIEW-SERVICE-REVIEW.html" />
+        <option value="$PROJECT_DIR$/templates/admin/VIEW-COMPLAINTS.html" />
+        <option value="$PROJECT_DIR$/templates/admin/SEND-REPLY.html" />
+        <option value="$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html" />
+        <option value="$PROJECT_DIR$/templates/service center/servicecenterindex.html" />
+        <option value="$PROJECT_DIR$/templates/admin/index.html" />
         <option value="$PROJECT_DIR$/MYAPP/views.py" />
       </list>
     </option>
@@ -256,6 +264,7 @@
     <option name="width" value="1918" />
     <option name="height" value="1006" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
@@ -271,6 +280,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -363,7 +373,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -765,13 +774,13 @@
     <frame x="1" y="1" width="1918" height="1006" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18729463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19386637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36014852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35900623" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34134614" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -792,11 +801,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36014852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35900623" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34134614" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18400876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1905805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -818,12 +827,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MYAPP/views.py</url>
-          <line>213</line>
+          <line>214</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MYAPP/views.py</url>
-          <line>473</line>
+          <line>474</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
@@ -856,13 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MYAPP/static/home/assets/css/templatemo-snapx-photography.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6300">
-          <caret line="279" column="1" lean-forward="false" selection-start-line="279" selection-start-column="1" selection-end-line="279" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -904,24 +906,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/service center/servicecenterhome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/service center/sign-up.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/service center/view-service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -939,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="180" lean-forward="false" selection-start-line="15" selection-start-column="180" selection-end-line="15" selection-end-column="180" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-REJECTED-SERVICE-CENTER.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -960,20 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-COMPLAINTS.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="168" lean-forward="false" selection-start-line="18" selection-start-column="168" selection-end-line="18" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-APP-REVIEW.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="168" lean-forward="false" selection-start-line="18" selection-start-column="168" selection-end-line="18" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/CHANGE-PASSWORD.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -982,13 +949,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/edit-category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/SEND-REPLY.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1111,19 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-SERVICE-REVIEW.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#th#3;n#tr#0;n#table#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#1;n#table#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2218#2224#1#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1131,7 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,27 +1085,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MYAPP/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-APP-REVIEW.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="146">
+          <caret line="33" column="57" lean-forward="false" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MYAPP/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/service center/view-service.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="99" column="30" lean-forward="false" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        <state relative-caret-position="-270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-SERVICE-REVIEW.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-COMPLAINTS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/admin/SEND-REPLY.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="71" lean-forward="false" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/service center/servicecenterhome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1169,31 +1150,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/service center/servicecenterindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1710">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1290">
+          <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html">
+    <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="2040">
+          <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MYAPP/static/home/assets/css/templatemo-snapx-photography.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10860">
+          <caret line="362" column="31" lean-forward="false" selection-start-line="362" selection-start-column="31" selection-end-line="362" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MYAPP/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3570">
+          <caret line="122" column="51" lean-forward="false" selection-start-line="122" selection-start-column="51" selection-end-line="122" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MYAPP/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MYAPP/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="478" column="40" lean-forward="false" selection-start-line="478" selection-start-column="40" selection-end-line="478" selection-end-column="40" />
+        <state relative-caret-position="120">
+          <caret line="622" column="40" lean-forward="true" selection-start-line="622" selection-start-column="40" selection-end-line="622" selection-end-column="40" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <element signature="e#2866#2962#0" expanded="false" />
-            <marker date="1739794021606" expanded="true" signature="9326:9544" ph="..." />
-            <marker date="1739794021606" expanded="true" signature="14286:14667" ph="..." />
-            <marker date="1739794021606" expanded="true" signature="14592:14597" ph="..." />
+            <marker date="1740160538212" expanded="true" signature="9406:9624" ph="..." />
+            <marker date="1740160538212" expanded="true" signature="14366:14747" ph="..." />
+            <marker date="1740160538212" expanded="true" signature="14672:14677" ph="..." />
           </folding>
         </state>
       </provider>

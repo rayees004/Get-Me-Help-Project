@@ -176,12 +176,13 @@ def view_complaints_post(request):
 
 
 def view_service_review_get(request,id):
+    request.session['sid']=id
     a= ServiceReview.objects.filter(SERVICE__SERVICE_CENTER_id=id)
     return render(request,'admin/VIEW-SERVICE-REVIEW.html',{'data':a})
 def view_service_review_post(request):
     from_date = request.POST['textfield']
     to_date = request.POST['textfield2']
-    v= ServiceReview.objects.filter(date__range=[from_date,to_date])
+    v= ServiceReview.objects.filter(date__range=[from_date,to_date],SERVICE__SERVICE_CENTER_id=request.session['sid'])
     return render(request,'admin/VIEW-SERVICE-REVIEW.html',{'data':v})
 
 
@@ -472,7 +473,7 @@ def view_service_post(request):
     return render(request, "service center/view-service.html",{"data":se,"data1":v})
 
 def service_review_get(request):
-    a= ServiceReview.objects.filter()
+    a= ServiceReview.objects.filter(SERVICE__SERVICE_CENTER__LOGIN=request.session['lid'])
     return render(request,'service center/VIEW-SERVICE-REVIEW.html',{'data':a})
 def service_review_post(request):
     from_date = request.POST['textfield']
@@ -612,27 +613,37 @@ def view_request_status_post(request):
     for i in s:
         l.append({"id":i.id,
                   "date":i.date,
-                  "status":i.status,
+                  "sta":i.status,
                   "Servicename":i.SERVICE.service_name})
+    print(l)
     return JsonResponse({"status": "ok",'data':l})
 
 def view_work_status_post(request):
     lid = request.POST['lid']
-    s = Request.objects.filter(BOOKINGS__USER__LOGIN_id=lid,)
+    s = Request.objects.filter(BOOKINGS__id=lid)
     l = []
     for i in s:
-        l.append(
-            {"id": i.id,
-             "date": i.date,
-             "work_status": i.work_status,
-             "service_name": i.BOOKINGS.SERVICE.service_name,
-             "service_charge": i.BOOKINGS.SERVICE.service_charge
-             })
+        l.append({
+            "id": i.id,
+            "date": i.date,
+            "work_status": i.work_status,
+            "service_name": i.BOOKINGS.SERVICE.service_name,
+            "service_charge": i.BOOKINGS.SERVICE.service_charge
+        })
+    print(l)
 
     return JsonResponse({"status": "ok",'data':l})
 
 def user_payment_post(request):
-    type=request.POST['type']
+    lid=request.POST['lid']
+
+    id=request.POST['id']
+    b=Payment()
+    b.type='pending'
+    b.status='pending'
+    b.USER=User.objects.get(LOGIN_id=lid)
+    b.REQUEST_id=id
+    b.save()
     return JsonResponse({"status": "ok"})
 
 
@@ -643,7 +654,7 @@ def send_complaint_post(request):
     c=Complaint()
     c.complaint=complaint
     c.date=datetime.now()
-    c.reply='pending'
+    c.reply=''
     c.status='pending'
     c.USER=User.objects.get(LOGIN_id=lid)
     c.save()

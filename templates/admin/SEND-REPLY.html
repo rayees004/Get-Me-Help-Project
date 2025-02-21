@@ -6,11 +6,18 @@
 </head>
 {% extends 'admin/index.html' %}
 {% block body %}
-<body style="font-family: Arial, sans-serif; background-color: #f8f8f8;">
-<form id="form1" name="form1" method="post" action="/myapp/send_post/" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
-    {% csrf_token %}
+<body >
 
-    <table class="table table-bordered" style="width: 100%; border-collapse: collapse; background-color: #ffffff; border: 1px solid #ccc;">
+<center>
+
+
+<form id="form1" name="form1" method="post" action="/myapp/send_post/#ab" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
+    {% csrf_token %}
+<div class="container">
+
+
+
+    <table class="table table-bordered" style="width: 600px">
         <input type="hidden" name="id" value="{{ rid }}">
         <tr>
             <th scope="col" style="padding: 8px;">REPLY</th>
@@ -21,7 +28,11 @@
             <td style="padding: 8px;"><input type="submit" name="button" id="button" value="SEND" class="btn btn-success" style="background-color: blue; color: white; width: 100%;"/></td>
         </tr>
     </table>
+</div>
 </form>
+
+    </center>
+
 </body>
 {% endblock %}
 </html>

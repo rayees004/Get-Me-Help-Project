@@ -7,7 +7,7 @@
 {% extends 'admin/index.html' %}
 {% block body %}
 <body style="font-family: Arial, sans-serif; background-color: #f8f8f8;">
-<form action="/myapp/view_complaints_post/" method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
+<form action="/myapp/view_complaints_post/#ab" method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
     {% csrf_token %}
 
     <table class="pull-left" style="margin-bottom: 20px; width: 100%;">
@@ -35,7 +35,7 @@
             <td style="padding: 8px;">{{ i.date }}</td>
             <td style="padding: 8px;">{{ i.USER.name }}</td>
             <td style="padding: 8px;">{{ i.complaint }}</td>
-            <td style="padding: 8px;">{% if i.reply == 'pending' %}<a href="/myapp/send_get/{{ i.id }}">REPLY</a>{% else %}{{ i.reply }}{% endif %}</td>
+            <td style="padding: 8px;">{% if i.reply == '' %}<a href="/myapp/send_get/{{ i.id }}#ab">REPLY</a>{% else %}{{ i.reply }}{% endif %}</td>
             <td style="padding: 8px;">{{ i.status }}</td>
         </tr>
         {% endfor %}
