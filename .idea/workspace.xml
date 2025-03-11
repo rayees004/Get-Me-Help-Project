@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d61f983-b180-4c83-a94e-58ab1b2d01d9" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW.html" afterPath="$PROJECT_DIR$/templates/service center/VIEW-SERVICE-REVIEW_SC.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MYAPP/static/signup/images/registration-form-5.jpg" afterPath="$PROJECT_DIR$/MYAPP/static/signup/images/registration-form-5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MYAPP/models.py" afterPath="$PROJECT_DIR$/MYAPP/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MYAPP/urls.py" afterPath="$PROJECT_DIR$/MYAPP/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MYAPP/views.py" afterPath="$PROJECT_DIR$/MYAPP/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/VIEW-SERVICE-CENTER.html" afterPath="$PROJECT_DIR$/templates/admin/VIEW-SERVICE-CENTER.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/service center/Payment.html" afterPath="$PROJECT_DIR$/templates/service center/Payment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/service center/servicecenterindex.html" afterPath="$PROJECT_DIR$/templates/service center/servicecenterindex.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/service center/signup.html" afterPath="$PROJECT_DIR$/templates/service center/signup.html" />
-    </list>
+    <list default="true" id="1d61f983-b180-4c83-a94e-58ab1b2d01d9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,16 +49,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="VIEW-APPROVED-SERVICE-CENTER.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/admin/VIEW-APPROVED-SERVICE-CENTER.html">
               <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +69,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/MYAPP/views.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="450">
-                  <caret line="767" column="0" lean-forward="true" selection-start-line="767" selection-start-column="0" selection-end-line="767" selection-end-column="0" />
+                  <caret line="767" column="0" lean-forward="false" selection-start-line="767" selection-start-column="0" selection-end-line="767" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                     <element signature="e#2866#2962#0" expanded="false" />
@@ -102,6 +81,36 @@
                     <marker date="1741509895908" expanded="true" signature="14499:14880" ph="..." />
                     <marker date="1741509895908" expanded="true" signature="14805:14810" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="getmehelpDB.sql" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/getmehelpDB.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-17075">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sqlbackup.sql" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sqlbackup.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/manage.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -927,20 +936,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/admin/CHANGE-PASSWORD.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="173" lean-forward="false" selection-start-line="26" selection-start-column="173" selection-end-line="26" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/edit-category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/add-category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1012,13 +1007,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/service center/edit-profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getmehelpDB.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1261,7 +1249,7 @@
     <entry file="file://$PROJECT_DIR$/MYAPP/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="767" column="0" lean-forward="true" selection-start-line="767" selection-start-column="0" selection-end-line="767" selection-end-column="0" />
+          <caret line="767" column="0" lean-forward="false" selection-start-line="767" selection-start-column="0" selection-end-line="767" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
             <element signature="e#2866#2962#0" expanded="false" />
@@ -1269,6 +1257,30 @@
             <marker date="1741509895908" expanded="true" signature="14499:14880" ph="..." />
             <marker date="1741509895908" expanded="true" signature="14805:14810" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getmehelpDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17075">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlbackup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
