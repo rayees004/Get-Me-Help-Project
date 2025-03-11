@@ -33,9 +33,9 @@
       <td>{{ forloop.counter }}&nbsp;</td>
       <td>&nbsp;{{ i.REQUEST.date}}</td>
       <td>&nbsp;{{ i.USER.name }}</td>
-      <td>&nbsp;{{ i.REQUEST.SERVICE.service_charge }}</td>
+      <td>&nbsp;{{ i.REQUEST.BOOKINGS.SERVICE.service_charge }}</td>
       <td>&nbsp;{{ i.status }}</td>
-      <td>&nbsp;{{ i.REQUEST.SERVICE.service_name}}<br>{{ i.REQUEST.SERVICE.descripton}}</td>
+      <td>&nbsp;{{ i.REQUEST.BOOKINGS.SERVICE.service_name}}<br>{{ i.REQUEST.BOOKINGS.SERVICE.descripton}}</td>
     </tr>{% endfor %}
   </table>
   <p>&nbsp;</p>

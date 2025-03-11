@@ -30,7 +30,12 @@ class Service_center(models.Model):
     ownername=models.CharField(max_length=100)
     status=models.CharField(max_length=100)
     owneremail=models.CharField(max_length=100)
+
+    latitude=models.CharField(max_length=500)
+    longitude=models.CharField(max_length=500)
+
     LOGIN=models.ForeignKey(Login,on_delete=models.CASCADE)
+
 
 class Category(models.Model):
     category=models.CharField(max_length=100)
@@ -73,7 +78,7 @@ class ServiceReview(models.Model):
 
 
 
-class Loction(models.Model):
+class Location(models.Model):
     LOGIN=models.ForeignKey(Login,on_delete=models.CASCADE)
     latitude=models.CharField(max_length=500)
     longitude=models.CharField(max_length=500)
@@ -88,6 +93,7 @@ class Bookings(models.Model):
 class Request(models.Model):
     date=models.DateField()
     work_status=models.CharField(max_length=100)
+    status=models.CharField(max_length=100,default='pending')
     BOOKINGS=models.ForeignKey(Bookings,on_delete=models.CASCADE)
 
 

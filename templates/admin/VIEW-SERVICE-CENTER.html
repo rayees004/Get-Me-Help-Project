@@ -36,7 +36,7 @@
             <td style="padding: 8px;">{{ i.owneremail }}</td>
             <td style="padding: 8px;">&nbsp;{{ i.place }}<br>{{ i.post }}<br>{{ i.pin }},{{ i.district }}</td>
             <td style="padding: 8px;">{{ i.phone }}</td>
-            <td style="padding: 8px;">{{ i.photo }}</td>
+            <td style="padding: 8px;"><img src="{{ i.photo }}" width="100" height="100" alt="Photo" alt=""/></td>
             <td style="padding: 8px;"><p><a href="/myapp/approve_service_center/{{ i.LOGIN.id }}">APPROVE</a></p>
                 <p><a href="/myapp/reject_service_center/{{ i.LOGIN.id }}">REJECT</a></p></td>
         </tr>

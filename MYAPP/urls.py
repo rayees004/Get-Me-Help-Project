@@ -136,7 +136,11 @@ urlpatterns = [
 
     path('user_view_category_post/',views.user_view_category_post),
 
-    path('user_view_category_based_service_center/',views.user_view_category_based_service_center)
+    path('user_view_category_based_service_center/',views.user_view_category_based_service_center),
+
+    path('get_nearest_service_center/',views.get_nearest_service_center),
+
+    path('updatelocation/',views._update_location)
 
 
 

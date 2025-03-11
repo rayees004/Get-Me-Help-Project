@@ -353,6 +353,9 @@ def sign_up_post(request):
     owner_email=request.POST['textfield10']
     password=request.POST['textfield11']
     confirm_password=request.POST['textfield12']
+    latitude=request.POST['latitude']
+    logitude=request.POST['logitude']
+
 
     if(password==confirm_password):
         l=Login()
@@ -373,6 +376,8 @@ def sign_up_post(request):
         s.status='pending'
         s.owneremail=owner_email
         s.LOGIN=l
+        s.latutude=latitude
+        s.logitude=logitude
         s.save()
         return HttpResponse('''<script>alert('signup completed');window.location="/myapp/login_get/"</script>''')
     else:
@@ -474,12 +479,12 @@ def view_service_post(request):
 
 def service_review_get(request):
     a= ServiceReview.objects.filter(SERVICE__SERVICE_CENTER__LOGIN=request.session['lid'])
-    return render(request,'service center/VIEW-SERVICE-REVIEW.html',{'data':a})
+    return render(request, 'service center/VIEW-SERVICE-REVIEW_SC.html', {'data':a})
 def service_review_post(request):
     from_date = request.POST['textfield']
     to_date = request.POST['textfield2']
     v= ServiceReview.objects.filter(date__range=[from_date,to_date])
-    return render(request,'service center/VIEW-SERVICE-REVIEW.html',{'data':v})
+    return render(request, 'service center/VIEW-SERVICE-REVIEW_SC.html', {'data':v})
 
 
 
@@ -498,7 +503,7 @@ def user_signup_post(request):
     gender=request.POST['gender']
     dob=request.POST['dob']
     password=request.POST['password']
-    confirmpassword=request.POST['confirmpassword']
+
 
     l=Login()
     l.password=password
@@ -620,7 +625,10 @@ def view_request_status_post(request):
 
 def view_work_status_post(request):
     lid = request.POST['lid']
-    s = Request.objects.filter(BOOKINGS__id=lid)
+    bid = request.POST['bid']
+    s = Request.objects.filter(BOOKINGS__USER__LOGIN_id=lid,BOOKINGS__id=bid)
+    # s = Request.objects.all()
+    print(lid+"=lid---"+bid+"=bid")
     l = []
     for i in s:
         l.append({
@@ -628,22 +636,36 @@ def view_work_status_post(request):
             "date": i.date,
             "work_status": i.work_status,
             "service_name": i.BOOKINGS.SERVICE.service_name,
-            "service_charge": i.BOOKINGS.SERVICE.service_charge
+            "service_charge": i.BOOKINGS.SERVICE.service_charge,
+            "pstatus":i.status
         })
-    print(l)
+
+
+
 
     return JsonResponse({"status": "ok",'data':l})
 
 def user_payment_post(request):
     lid=request.POST['lid']
+    bid=request.POST['bid']
+    print('login id',lid)
 
-    id=request.POST['id']
+
+    # p = Payment.objects.get(REQUEST=bid)
+    #
+    # Request.objects.filter(BOOKINGS_id=bid).update(work_status='paid')
     b=Payment()
-    b.type='pending'
-    b.status='pending'
+    b.type='completed'
+    b.status='paid'
     b.USER=User.objects.get(LOGIN_id=lid)
-    b.REQUEST_id=id
+    b.REQUEST_id=bid
     b.save()
+
+
+    r = Request.objects.get(id=bid)
+    r.status = 'paid'
+    r.save()
+
     return JsonResponse({"status": "ok"})
 
 
@@ -732,16 +754,86 @@ def user_view_category_post(request):
 
 def user_view_category_based_service_center(request):
     cid=request.POST['cid']
-    res=Service.objects.filter(CATEGORY__id=cid)
+    se=request.POST['se']
+    res=Service.objects.filter(CATEGORY__id=cid,SERVICE_CENTER__place__icontains=se)
     l=[]
     for i in res:
-        l.append({"id":i.SERVICE_CENTER.id,"name":i.SERVICE_CENTER.name,"email":i.SERVICE_CENTER.email,
-                  "Phone":i.SERVICE_CENTER.phone,"place":i.SERVICE_CENTER.place,"post":i.SERVICE_CENTER.post,
-                  "pin":i.SERVICE_CENTER.pin,"district":i.SERVICE_CENTER.district,"photo":i.SERVICE_CENTER.photo,
-                  "ownername":i.SERVICE_CENTER.ownername,"owneremail":i.SERVICE_CENTER.owneremail})
+
+        l.append({"id":i.SERVICE_CENTER.id,
+                  "name":i.SERVICE_CENTER.name,
+                  "email":i.SERVICE_CENTER.email,
+                  "Phone":i.SERVICE_CENTER.phone,
+                  "place":i.SERVICE_CENTER.place,
+                  "post":i.SERVICE_CENTER.post,
+
+                  "pin":i.SERVICE_CENTER.pin,
+                  "district":i.SERVICE_CENTER.district,
+                  "photo":i.SERVICE_CENTER.photo,
+
+                  "ownername":i.SERVICE_CENTER.ownername,
+                  "owneremail":i.SERVICE_CENTER.owneremail,
+                  "latitude": i.SERVICE_CENTER.latitude,
+                  "longitude": i.SERVICE_CENTER.longitude,
+
+                  })
 
     return JsonResponse({"status": "ok","data":l})
 
+    # cid=request.POST['cid']
+ # Return a JSON response with the status and data
+    return JsonResponse({"status": "ok", "data": service_data})
+
+
+
+def _update_location(request):
+    lid=request.POST['lid']
+    lat=request.POST['lat']
+    lon=request.POST['lon']
+    dobj=Location()
+    if Location.objects.filter(LOGIN_id=lid).exists():
+        dobj = Location.objects.get(LOGIN_id=lid)
+    dobj.latitude=lat
+    dobj.longitude=lon
+    dobj.LOGIN_id=lid
+    dobj.save()
+    return JsonResponse({'status':'ok'})
+
+def get_nearest_service_center(request):
+    # se=request.POST['se']
+
+    from django.db.models import FloatField, F, Value, Q
+    from django.db.models.functions import Sqrt, Sin, Cos, Radians, ACos, Cast
+    current_latitude = float(request.POST['lat'])
+    current_longitude = float(request.POST['lon'])
+
+    EARTH_RADIUS = 6371
+
+    hospitals = Service_center.objects.annotate(
+        # Convert CharField latitude and longitude to FloatField
+        latitude=Cast('latitude', FloatField()),
+        longitude=Cast('longitude', FloatField())
+    ).annotate(
+        distance=EARTH_RADIUS * ACos(
+            Cos(Radians(Value(current_latitude))) * Cos(Radians(F('lati'))) *
+            Cos(Radians(F('lon')) - Radians(Value(current_longitude))) +
+            Sin(Radians(Value(current_latitude))) * Sin(Radians(F('lati')))
+        )
+    ).filter(
+        distance__lte=10,status='Approved'
+        # distance__lte=10,place__icontains=se,status='Approved'
+    ).order_by('distance')
+
+    l = []
+    for i in hospitals:
+        l.append({
+            "id":i.id,"name":i.name,"email":i.email,
+                  "Phone":i.phone,"place":i.place,"post":i.post,
+                  "pin":i.pin,"district":i.district,"photo":i.photo,
+                  "ownername":i.ownername,"owneremail":i.owneremail,
+            # 'logid': i.LOGIN.id
+
+        })
+    return JsonResponse({'status': 'ok', 'data': l})
 
 
 
@@ -763,10 +855,52 @@ def user_view_category_based_service_center(request):
 
 
 
+from django.db.models import FloatField, F, Value
+from django.db.models.functions import Sqrt, Sin, Cos, Radians, ACos, Cast
+from django.http import JsonResponse
 
 
+def get_nearest_service_center(request):
 
+    current_latitude = float(request.POST['lat'])
+    current_longitude = float(request.POST['lon'])
 
+    EARTH_RADIUS = 6371
+
+    servicecenter = Service_center.objects.annotate(
+        # Convert CharField latitude and longitude to FloatField
+        latitude_annotated=Cast('latitude', FloatField()),  # Renamed to avoid conflict
+        longitude_annotated=Cast('longitude', FloatField())  # Renamed to avoid conflict
+    ).annotate(
+        distance=EARTH_RADIUS * ACos(
+            Cos(Radians(Value(current_latitude))) * Cos(Radians(F('latitude_annotated'))) *
+            Cos(Radians(F('longitude_annotated')) - Radians(Value(current_longitude))) +
+            Sin(Radians(Value(current_latitude))) * Sin(Radians(F('latitude_annotated')))
+        )
+    ).filter(
+        distance__lte=10, status='Approved'
+    ).order_by('distance')
+
+    l = []
+    for i in servicecenter:
+        l.append({
+            "id": i.id,
+            "name": i.name,
+            "email": i.email,
+            "Phone": i.phone,
+            "place": i.place,
+            "post": i.post,
+            "pin": i.pin,
+            "district": i.district,
+            "photo": i.photo,
+            "ownername": i.ownername,
+            "owneremail": i.owneremail,
+            "latitude":i.latitude,
+            "longitude":i.longitude,
+
+        })
+
+    return JsonResponse({'status': 'ok', 'data': l})
 
 
 
