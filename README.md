@@ -1,9 +1,9 @@
-   'Traveling long distances in personal vehicles offers flexibility and convenience but also comes 
+ **  'Traveling long distances in personal vehicles offers flexibility and convenience but also comes 
 with challenges such as vehicle maintenance, breakdowns, and access to essential services. This 
 project aims to develop a comprehensive Vehicle Assistance Service System named “Get Me 
 Help” to support travelers by providing real-time vehicle diagnostics, roadside assistance, fuel 
 station locators, and emergency services. Additionally, it will feature a mobile application that 
-connects users with nearby service stations, mechanics, and towing services.'
+connects users with nearby service stations, mechanics, and towing services.'**
  
 # python django framework code. 
 # This project is the vehicle service assistance system .
