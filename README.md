@@ -1,4 +1,4 @@
-# python django framework code. 
+#  Python Django Framework Code
 
  **Traveling long distances in personal vehicles offers flexibility and convenience but also comes 
 with challenges such as vehicle maintenance, breakdowns, and access to essential services. This 
@@ -31,8 +31,8 @@ connects users with nearby service stations, mechanics, and towing services.**
 ### add location,
 ### user's bookings accept or reject,
 ### work status update,
-# User's interface
-## user's interface frendend is created with the flutter based application
+# **User's interface**
+## user's interface  Front-End is created with the flutter based application
 ### sign and login
 ### Service Centers view 
 ### Service booking
